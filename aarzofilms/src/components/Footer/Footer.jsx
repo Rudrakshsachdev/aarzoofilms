@@ -116,7 +116,7 @@ function Footer() {
                 <a href="/services/commercial" className={styles.navLink}>Commercial Work</a>
               </div>
             </div>
-          </div>
+          </div> 
 
           <div className={styles.newsletter}>
             <h4>Stay Inspired</h4>
@@ -184,11 +184,11 @@ function Footer() {
         <div className={styles.bottomSection}>
           <div className={styles.copyright}>
             <span>© {new Date().getFullYear()} Aarzo Films. All rights reserved.</span>
-            <div className={styles.legalLinks}>
+            {/* <div className={styles.legalLinks}>
               <a href="/privacy" className={styles.legalLink}>Privacy Policy</a>
               <a href="/terms" className={styles.legalLink}>Terms of Service</a>
               <a href="/cookies" className={styles.legalLink}>Cookie Policy</a>
-            </div>
+            </div> */}
           </div>
           
           <button 
