@@ -141,26 +141,23 @@ function Footer() {
             </div>
 
             <div className={styles.navSection}>
-              <h4>Services</h4>
-              <div className={styles.navLinks}>
-                <a href="/services/wedding" className={styles.navLink}>
-                  Wedding Photography
-                </a>
-                <a href="/services/portrait" className={styles.navLink}>
-                  Portrait Sessions
-                </a>
-                <a href="/services/cinematic" className={styles.navLink}>
-                  Cinematic Films
-                </a>
-                <a href="/services/pre-wedding" className={styles.navLink}>
-                  Pre-Wedding Shoots
-                </a>
-                <a href="/services/events" className={styles.navLink}>
-                  Event Coverage
-                </a>
-                <a href="/services/commercial" className={styles.navLink}>
-                  Commercial Work
-                </a>
+              <h4>Business Hours</h4>
+              <div className={styles.hoursInfo}>
+                <div className={styles.hoursRow}>
+                  <span className={styles.day}>Monday - Friday</span>
+                  <span className={styles.time}>10:00 AM - 7:00 PM</span>
+                </div>
+                <div className={styles.hoursRow}>
+                  <span className={styles.day}>Saturday</span>
+                  <span className={styles.time}>10:00 AM - 5:00 PM</span>
+                </div>
+                <div className={styles.hoursRow}>
+                  <span className={styles.day}>Sunday</span>
+                  <span className={styles.time}>By Appointment</span>
+                </div>
+                <p className={styles.hoursNote}>
+                  Available for shoots on weekends & holidays
+                </p>
               </div>
             </div>
           </div>
