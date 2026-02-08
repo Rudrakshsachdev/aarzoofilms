@@ -11,7 +11,7 @@ function Hero() {
 
             <div className={styles.content}>
                 <div className={styles.contentWrapper}>
-                    <div className={styles.badge}>PROFESSIONAL PHOTOGRAPHY</div>
+                    <div className={styles.badge}>Artistry. Emotion. Perfection.</div>
 
                     <h1>
                         Capturing Moments,

@@ -1,9 +1,27 @@
+import { useState, useEffect } from "react";
 import { supabase } from "../../services/supabaseClient";
 import styles from "./AdminDashboard.module.css";
 import CategoryManager from "./CategoryManager";
 import ImageManager from "./ImageManager";
 
 function AdminDashboard() {
+  const [totalImages, setTotalImages] = useState(0);
+
+  useEffect(() => {
+    const countTotalImages = async () => {
+      const { count, error } = await supabase
+        .from("images")
+        .select("*", { count: "exact", head: true });
+      if (error) {
+        console.error("Error counting images:", error);
+        return;
+      }
+      setTotalImages(count || 0);
+    };
+
+    countTotalImages();
+  }, []);
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
     // Session change is handled by onAuthStateChange in AdminRoute
@@ -75,7 +93,7 @@ function AdminDashboard() {
               </svg>
             </div>
             <div className={styles.statContent}>
-              <span className={styles.statNumber}>24</span>
+              <span className={styles.statNumber}>{totalImages}</span>
               <span className={styles.statLabel}>Total Images</span>
             </div>
           </div>
