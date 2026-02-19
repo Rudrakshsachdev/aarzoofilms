@@ -28,9 +28,9 @@ function About() {
           <div className={styles.mainContent}>
             <div className={styles.textBlock}>
               <div className={styles.dropCapContainer}>
-                <span className={styles.dropCap}>K</span>
+                <span className={styles.dropCap}>A</span>
                 <p className={styles.text}>
-                  ing15 Films is a premium photography and cinematic studio dedicated
+                  arzoo Films is a premium photography and cinematic studio dedicated
                   to capturing emotions, connections, and timeless memories. We believe
                   photography is not just about images — it's about stories that stay
                   with you forever.
